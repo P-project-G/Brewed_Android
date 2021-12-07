@@ -4,7 +4,7 @@
 
 ## 1일차  
 ---  
-![1일차스프린트](/uploads/f1bbecede5e20c58dc217c3d377b9cbf/1일차스프린트.png)  
+![1일차스프린트](https://user-images.githubusercontent.com/31922462/145063329-a0915f1e-ab64-4285-bd89-daadb5ddf41a.png) 
 
 전체적인 프로젝트 기획 정리 & 수립을 하였으며, 디자인 테마를 선정했습니다.  
 또한, 스프린트를 통해 해야할 일을 기능들에 대해서 세부적으로 나누었고,  
@@ -18,7 +18,7 @@ LiveData를 활용한 JetPack코드로 변환하였습니다.
 
 ## 2일차  
 ---
-![2일차스프린트](/uploads/9cb64f9b50fdceba2a0808360ef6bfda/2일차스프린트.png)  
+![2일차스프린트](https://user-images.githubusercontent.com/31922462/145063743-a886ead3-ac2f-406b-890f-d08b918a94af.png) 
 
 a. 코멘트 작업을 개선했습니다.  
 b. 전체적인 UI를 개선했습니다.  
@@ -30,7 +30,7 @@ g. 흔들면 QR코드 나오는 작업을 하였습니다.
 
 ### 2일차 주요작업  
 흔들면 코로나 QR코드 나오게하기...  
-![shakeqr](/uploads/528d112cea582a4e65ebbad6bf0b8126/shakeqr.gif)  
+![shakeqr](https://user-images.githubusercontent.com/31922462/145063814-8ae1d5b0-c939-40fc-9664-5de4ae209ac9.gif)  
 로그인 후 쿠키를 기억해서 다음 부턴 로그인 안해도 바로 흔들면 코로나 체크인 QR코드가 나옵니다.  
   
 ## 3일차  
@@ -43,7 +43,7 @@ e. 서버에서 REST를 활용해 FCM 메시지를 받아 백그라운드에서�
 f. 토큰이 등록된 기기 모두에게 broadcast를 하여 메시지 전송, 지정한 토큰에 메시지를 전송하는 작업  
 
 ### 3일차 주요작업  
-![fcm_background_push](/uploads/5d90f319363b3abbb8a82d00e0dc34a5/fcm_background_push.gif)  
+![fcm_background_push](https://user-images.githubusercontent.com/31922462/145063904-e0874b97-a661-41be-8c65-1c8967dcc02d.gif)  
 백그라운드에서도 fcm msg push를 받을 수 있도록...  
 서버에 등록된 모든 토큰에 메시지를 푸시해서 클라이언트가 받을 수 있는 작업  
 
