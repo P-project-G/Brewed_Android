@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/brewed_lightgreen"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayouts4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/stampback"
+                android:translationY="-40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageViews"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/stamp_logo" />
+
+                <TextView
+                    android:id="@+id/textView4s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="2021 Brewed Coffee Stamp"
+                    android:fontFamily="@font/nanum_barun_gothic_bold"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageViews"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/stamp1s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp6s"
+                    app:layout_constraintStart_toEndOf="@+id/imageViews"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp2s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp7s"
+                    app:layout_constraintStart_toEndOf="@+id/stamp1s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp3s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp8s"
+                    app:layout_constraintStart_toEndOf="@+id/stamp2s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp4s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp9s"
+                    app:layout_constraintStart_toEndOf="@+id/stamp3s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp5s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp10s"
+                    app:layout_constraintStart_toEndOf="@+id/stamp4s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp9s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp8s"
+                    app:layout_constraintTop_toBottomOf="@+id/stamp1s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp8s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp7s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp7s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp1s"
+                    app:layout_constraintTop_toBottomOf="@+id/stamp1s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp6s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageViews"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp10s"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp9s"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <TextView
+                    android:id="@+id/textView5s"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/nanum_barun_gothic_light"
+                    android:text="10개의 스탬프를 완성시키면\n쿠폰 1개가 발급됩니다."
+                    android:textColor="@color/alpha_black"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp8s"
+                    app:layout_constraintEnd_toEndOf="@+id/stamp5s"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toEndOf="@+id/imageViews"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4s"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"></androidx.appcompat.widget.Toolbar>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/btnAlarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/btnCoupon">
+
+                <ImageView
+                    android:id="@+id/imgAlarm2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/alram" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/nanum_barun_gothic"
+                    android:text="Alarm"
+                     />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnCoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                <ImageView
+                    android:id="@+id/imgCoupon2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    app:srcCompat="@drawable/coupon" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/nanum_barun_gothic"
+                    android:text="Coupon"
+
+                     />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:visibility="visible"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/textUserName"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/nanum_barun_gothic_bold"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="벼락부자핫도그님"
+                android:textSize="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/nanum_barun_gothic_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="브루드에 오신 것을 환영합니다."
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textUserName" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@id/qrImage">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/phoneIcon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/vibration"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:text="흔들면 네이버 QR 체크인을\n할 수 있어요!"
+                        android:textColor="@color/black"
+                        android:textSize="7sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/qrImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:layout_marginTop="17dp"
+                android:src="@drawable/qr"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/stampback"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/stamp_logo" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="2021 Brewed Coffee Stamp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/stamp1"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp6"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp2"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp7"
+                    app:layout_constraintStart_toEndOf="@+id/stamp1"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp3"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp8"
+                    app:layout_constraintStart_toEndOf="@+id/stamp2"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp4"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp9"
+                    app:layout_constraintStart_toEndOf="@+id/stamp3"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp5"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:translationY="20dp"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp10"
+                    app:layout_constraintStart_toEndOf="@+id/stamp4"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp9"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp8"
+                    app:layout_constraintTop_toBottomOf="@+id/stamp1"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp8"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp7"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp7"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp1"
+                    app:layout_constraintTop_toBottomOf="@+id/stamp1"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp6"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <ImageView
+                    android:id="@+id/stamp10"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stamp9"
+                    app:srcCompat="@drawable/stamp_no" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="10개의 스탬프를 완성시키면\n쿠폰 1개가 발급됩니다."
+                    android:textColor="@color/alpha_black"
+                    app:layout_constraintBottom_toTopOf="@+id/stamp8"
+                    app:layout_constraintEnd_toEndOf="@+id/stamp5"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="What's New"
+                android:fontFamily="@font/nanum_barun_gothic_bold"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgCoupon" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/Text.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:text="최근 주문"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPager2" />
+
+            <ImageView
+                android:id="@+id/imgCoupon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                app:srcCompat="@drawable/coupon" />
+
+            <ImageView
+                android:id="@+id/imgAlarm"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+                app:srcCompat="@drawable/alram" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Coupon"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/imgCoupon"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:text="Alarm"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@+id/imgAlarm"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/frameLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imgFirstInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleX="1.5"
+                            android:scaleY="1.2"
+                            android:translationX="60dp"
+                            android:translationY="10dp"
+                            app:srcCompat="@drawable/button_color" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="저희 매장이 처음이신가요?"
+                            android:textColor="@color/coffee_light_white"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toStartOf="@+id/imgFirstInfo" />
+
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewLatestOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imgNoOrderCart"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/no_order_cart"
+                    app:tint="@color/alpha_black" />
+
+                <TextView
+                    android:id="@+id/tvNoOrderCartText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="최근 주문내역이 존재하지 않습니다."
+                    android:textColor="@color/alpha_black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imgNoOrderCart"
+                    app:layout_constraintStart_toEndOf="@+id/imgNoOrderCart"
+                    app:layout_constraintTop_toTopOf="@+id/imgNoOrderCart" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

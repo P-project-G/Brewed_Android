@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_hot"
+        android:title="인기순"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_default"
+        android:title="기본"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_cart"
+        android:title="장바구니"
+        app:showAsAction="ifRoom|withText" />
+</menu>
